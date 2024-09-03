@@ -1,3 +1,7 @@
+/**
+ * @author simji
+ * This show the blueprint of Flight Booking System
+ */
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -6,14 +10,27 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+/**
+ * class Flight selection page
+ */
 public class FlightSelectionPage {
     private Flight selectedFlight;
     private Scene scene;
 
+    /**
+     *
+     * @param stage
+     * Stage stage
+     * @param selectedDate
+     * LocalDate selectedDate
+     * @param isDomestic
+     * boolean isDomestic
+     * @param flightTypeSelectionPage
+     * FlightTypeSelectionPage flightTypeSelectionPage
+     */
     public FlightSelectionPage(Stage stage, LocalDate selectedDate, boolean isDomestic, FlightTypeSelectionPage flightTypeSelectionPage) {
         ComboBox<Flight> flightCB = new ComboBox<>();
         
@@ -78,6 +95,10 @@ public class FlightSelectionPage {
         scene = new Scene(layout, 290, 240);
     }
 
+    /**
+     * @return
+     * This show the return scene
+     */
     public Scene getScene() {
         return scene;
     }
