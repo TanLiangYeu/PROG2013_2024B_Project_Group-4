@@ -1,23 +1,28 @@
+/**
+ * @author simji
+ * This show the blueprint of Flight Booking System
+ */
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.geometry.Insets;
-     /**
-     * class Booking Result
-     */
 
+/**
+ * class Booking Result
+ */
 public class BookingResultPage {
     private Scene scene;
-          /**
-          *
-          * @param stage
-          * Booking Result
-          * @param booking
-          * text-fill: green
-          */
-        public BookingResultPage(Stage stage, Booking booking) {
+
+    /**
+     *
+     * @param stage
+     * Booking Result
+     * @param booking
+     * text-fill: green
+     */
+    public BookingResultPage(Stage stage, Booking booking) {
         TextArea infoTA = new TextArea(booking.getBookingInfo());
         infoTA.setEditable(false);
         infoTA.setMaxWidth(300);
@@ -31,12 +36,11 @@ public class BookingResultPage {
 
         scene = new Scene(layout, 290, 250);
     }
-    
-        /**
-         *
-         * @return scene
-         */
 
+    /**
+     *
+     * @return scene
+     */
     public Scene getScene() {
         return scene;
     }
