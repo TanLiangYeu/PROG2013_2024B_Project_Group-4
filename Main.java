@@ -9,7 +9,7 @@ import javafx.stage.Stage;
  * This show the blueprint of flight Booking System
  * @author simji
  */
-public class Main extends Application {
+public class FlightBookingSystem extends Application {
     /**
      * @param primaryStage
      * Flight Booking System
