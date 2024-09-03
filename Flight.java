@@ -9,26 +9,32 @@ import java.time.LocalTime;
  * class Flight
  */
 public abstract class Flight {
+
     /**
      *
      */
     protected String flightCode;
+
     /**
      *
      */
     protected String departure;
+
     /**
      *
      */
     protected String destination;
+
     /**
      *
      */
     protected LocalDate flightDate;
+
     /**
      *
      */
     protected LocalTime departTime;
+    
     /**
      *
      */
