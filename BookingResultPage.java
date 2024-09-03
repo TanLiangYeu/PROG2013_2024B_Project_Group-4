@@ -4,13 +4,13 @@ import javafx.scene.control.TextArea;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.geometry.Insets;
- /**
+     /**
      * class Booking Result
      */
 
 public class BookingResultPage {
     private Scene scene;
-    /**
+          /**
           *
           * @param stage
           * Booking Result
