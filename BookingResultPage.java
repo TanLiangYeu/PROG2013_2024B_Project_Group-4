@@ -17,9 +17,7 @@ public class BookingResultPage {
           * @param booking
           * text-fill: green
           */
-
-
-    public BookingResultPage(Stage stage, Booking booking) {
+        public BookingResultPage(Stage stage, Booking booking) {
         TextArea infoTA = new TextArea(booking.getBookingInfo());
         infoTA.setEditable(false);
         infoTA.setMaxWidth(300);
