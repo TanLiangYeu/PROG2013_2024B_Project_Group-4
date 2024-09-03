@@ -10,6 +10,7 @@ import javafx.stage.Stage;
  * @author simji
  */
 public class Main extends Application {
+    
     /**
      * @param primaryStage
      * Flight Booking System
