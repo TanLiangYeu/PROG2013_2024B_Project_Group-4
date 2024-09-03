@@ -7,6 +7,14 @@ import javafx.geometry.Insets;
 
 public class BookingResultPage {
     private Scene scene;
+    /**
+          *
+          * @param stage
+          * Booking Result
+          * @param booking
+          * text-fill: green
+          */
+
 
     public BookingResultPage(Stage stage, Booking booking) {
         TextArea infoTA = new TextArea(booking.getBookingInfo());
@@ -22,6 +30,11 @@ public class BookingResultPage {
 
         scene = new Scene(layout, 290, 250);
     }
+    
+        /**
+         *
+         * @return scene
+         */
 
     public Scene getScene() {
         return scene;
