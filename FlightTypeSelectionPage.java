@@ -1,3 +1,7 @@
+/**
+ * @author simji
+ * This show the blueprint of Flight Booking System
+ */
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
@@ -6,14 +10,20 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-
 import java.time.LocalDate;
 
+/**
+ * class flight type selection page
+ */
 public class FlightTypeSelectionPage {
     private Scene scene;
     private LocalDate selectedDate;
     private boolean isDomestic;
 
+    /**
+     * @param stage
+     * class Flight Type Selection Page
+     */
     public FlightTypeSelectionPage(Stage stage) {
         Label instructionLabel = new Label("Please select a date:");
 
@@ -50,6 +60,10 @@ public class FlightTypeSelectionPage {
         scene = new Scene(layout, 290, 200);
     }
 
+    /**
+     * 
+     * @return scene
+     */
     public Scene getScene() {
         return scene;
     }
