@@ -1,3 +1,7 @@
+/**
+ * @author simji
+ * This show the blueprint of Flight Booking System
+ */
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -9,10 +13,22 @@ import javafx.scene.Node;
 import javafx.stage.Stage;
 import javafx.geometry.Insets;
 
+/**
+ * class seat selection page
+ */
 public class SeatSelectionPage {
     private Scene scene;
     private RadioButton selectedSeatRB;
 
+    /**
+     *
+     * @param stage
+     * Stage stage
+     * @param selectedFlight
+     * Flight selectedFlight
+     * @param flightSelectionPage
+     * FlightSelectionPage flightSelectionPage
+     */
     public SeatSelectionPage(Stage stage, Flight selectedFlight, FlightSelectionPage flightSelectionPage) {
         GridPane gridPane = new GridPane();
         gridPane.setHgap(10);
@@ -59,6 +75,10 @@ public class SeatSelectionPage {
         scene = new Scene(layout, 290, 400);
     }
 
+    /**
+     *
+     * @return scene
+     */
     public Scene getScene() {
         return scene;
     }
